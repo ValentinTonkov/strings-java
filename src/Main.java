@@ -7,10 +7,10 @@ public class Main {
         comparingStrings();
         stringJoinExample();
         someStringMethods();
-        concatTest();
-        
+
         task1();
         task2();
+        task3();
     }
 
     private static void creatingStrings() {
@@ -115,7 +115,7 @@ public class Main {
         System.out.println("method: .repeat , time:         " + (finishTime - startTime)/1000 + "us");
     }
 
-    private static void concatTest() {
+    private static void task1() {
         System.out.println("\nConcatenating Strings..");
         concatWithAddition();
         concatWithConcat();
@@ -157,14 +157,14 @@ public class Main {
         return String.join(" ", words);
     }
 
-    private static void task1() {
+    private static void task2() {
         String source = "one two one two three four five three";
         String word = "one";
         System.out.println("\nTask1\nsource: " + source + "\nword: " + word + "\noccurrences: " + countWord(source, word));
         System.out.println("countWordWithSubstring(source, word) = " + countWordWithSubstring(source, word));
     }
 
-    private static void task2() {
+    private static void task3() {
         String source = "one two One two three four five three one";
         String wordToReplace = "one";
         String newWord = "replaced";
